@@ -51,7 +51,7 @@ def _get_access_tech():
 DEFAULT_METRICS = {
     'ping': {
         'label': _('Ping'),
-        'name': 'Ping',
+        'name': _('Ping'),
         'key': 'ping',
         'field_name': 'reachable',
         'related_fields': ['loss', 'rtt_min', 'rtt_max', 'rtt_avg'],
@@ -148,7 +148,7 @@ DEFAULT_METRICS = {
     },
     'config_applied': {
         'label': _('Configuration Applied'),
-        'name': 'Configuration Applied',
+        'name': _('Configuration Applied'),
         'key': 'config_applied',
         'field_name': 'config_applied',
         'alert_settings': {'operator': '<', 'threshold': 1, 'tolerance': 5},
@@ -221,7 +221,7 @@ DEFAULT_METRICS = {
     },
     'general_traffic': {
         'label': _('General Traffic'),
-        'name': 'General Traffic',
+        'name': _('General Traffic'),
         'key': 'traffic',
         'field_name': 'rx_bytes',
         'related_fields': ['tx_bytes'],
@@ -374,7 +374,7 @@ DEFAULT_METRICS = {
     },
     'disk': {
         'label': _('Disk usage'),
-        'name': 'Disk usage',
+        'name': _('Disk usage'),
         'key': 'disk',
         'field_name': 'used_disk',
         'charts': {
@@ -423,7 +423,7 @@ DEFAULT_METRICS = {
     },
     'memory': {
         'label': _('Memory usage'),
-        'name': 'Memory usage',
+        'name': _('Memory usage'),
         'key': 'memory',
         'field_name': 'percent_used',
         'related_fields': [
@@ -477,7 +477,7 @@ DEFAULT_METRICS = {
     },
     'cpu': {
         'label': _('CPU usage'),
-        'name': 'CPU usage',
+        'name': _('CPU usage'),
         'key': 'cpu',
         'field_name': 'cpu_usage',
         'related_fields': ['load_1', 'load_5', 'load_15'],

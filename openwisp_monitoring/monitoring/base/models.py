@@ -58,7 +58,7 @@ def get_metric_cache_key(*args, **kwargs):
 
 
 class AbstractMetric(TimeStampedEditableModel):
-    name = models.CharField(max_length=64)
+    name = models.CharField(verbose_name=_('name'),max_length=64)
     key = models.SlugField(
         max_length=64, blank=True, help_text=_('leave blank to determine automatically')
     )
@@ -92,7 +92,7 @@ class AbstractMetric(TimeStampedEditableModel):
         dump_kwargs={'indent': 4},
     )
     # NULL means the health has yet to be assessed
-    is_healthy = models.BooleanField(default=None, null=True, blank=True, db_index=True)
+    is_healthy = models.BooleanField(_('is healthy'), default=None, null=True, blank=True, db_index=True)
     # Like "is_healthy", but respects tolerance of alert settings
     is_healthy_tolerant = models.BooleanField(default=None, null=True, blank=True)
 

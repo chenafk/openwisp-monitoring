@@ -1,6 +1,8 @@
 #ow-chart-inner-container {
   margin-top: 25px;
   padding: 0px 40px;
+  /* ÔÝÊ±Òþ²Ø */
+  display: none;
 }
 #ow-chart-inner-container .js-plotly-plot {
   width: 100%;

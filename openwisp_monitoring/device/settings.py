@@ -1,5 +1,5 @@
 from django.core.exceptions import ImproperlyConfigured
-
+from django.utils.translation import gettext_lazy as _
 from ..settings import get_settings_value
 
 
@@ -21,11 +21,11 @@ def get_critical_device_metrics():
 
 def get_health_status_labels():
     default_labels = {
-        'unknown': 'unknown',
-        'ok': 'ok',
-        'problem': 'problem',
-        'critical': 'critical',
-        'deactivated': 'deactivated',
+        'unknown': _('unknown'),
+        'ok': _('ok'),
+        'problem': _('problem'),
+        'critical': _('critical'),
+        'deactivated': _('deactivated'),
     }
     labels = default_labels.copy()
     configured_labels = get_settings_value(

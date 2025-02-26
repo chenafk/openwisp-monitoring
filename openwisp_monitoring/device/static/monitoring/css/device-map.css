@@ -35,6 +35,8 @@
   height: 300px;
   width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  /* ÔÝÊ±Òþ²Ø */
+  display: none;
 }
 #device-map-container .ow-loading-spinner {
   position: absolute;

@@ -28,7 +28,7 @@ class MonitoringConfig(AppConfig):
         register_menu_group(
             position=80,
             config={
-                'label': 'Monitoring',
+                'label': _('Monitoring'),
                 'items': {
                     1: {
                         'label': _('Metrics'),

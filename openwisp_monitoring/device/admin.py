@@ -215,7 +215,7 @@ class MetricInline(
 
     readonly_fields = ['name', 'is_healthy']
     # Explicitly changed name from Metrics to Alert Settings
-    verbose_name = _('Alert Settings')
+    verbose_name = _('Alert settings')
     verbose_name_plural = verbose_name
     inline_permission_suffix = 'alertsettings_inline'
     # Ordering queryset by metric name

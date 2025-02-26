@@ -1,14 +1,15 @@
 from django.conf import settings
 
 from ..settings import get_settings_value
+from django.utils.translation import gettext_lazy as _
 
 CHECK_CLASSES = get_settings_value(
     'CHECK_CLASSES',
     (
         ('openwisp_monitoring.check.classes.Ping', 'Ping'),
-        ('openwisp_monitoring.check.classes.ConfigApplied', 'Configuration Applied'),
+        ('openwisp_monitoring.check.classes.ConfigApplied', _('Configuration Applied')),
         ('openwisp_monitoring.check.classes.Iperf3', 'Iperf3'),
-        ('openwisp_monitoring.check.classes.WifiClients', 'WiFi Clients'),
+        ('openwisp_monitoring.check.classes.WifiClients', _('WiFi Clients')),
     ),
 )
 AUTO_PING = get_settings_value('AUTO_PING', True)
