@@ -336,7 +336,7 @@ class AbstractDeviceMonitoring(TimeStampedEditableModel):
     STATUS = Choices(
         ('unknown', _(app_settings.HEALTH_STATUS_LABELS['unknown'])),
         ('ok', _(app_settings.HEALTH_STATUS_LABELS['ok'])),
-        # ‘› ±“˛≤ÿ
+        # ÊöÇÊó∂ÈöêËóè
         # ('problem', _(app_settings.HEALTH_STATUS_LABELS['problem'])),
         # ('critical', _(app_settings.HEALTH_STATUS_LABELS['critical'])),
         ('deactivated', _(app_settings.HEALTH_STATUS_LABELS['deactivated'])),
