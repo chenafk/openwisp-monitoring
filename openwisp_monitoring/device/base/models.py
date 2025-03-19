@@ -338,7 +338,7 @@ class AbstractDeviceMonitoring(TimeStampedEditableModel):
         ('ok', _(app_settings.HEALTH_STATUS_LABELS['ok'])),
         # 暂时隐藏
         # ('problem', _(app_settings.HEALTH_STATUS_LABELS['problem'])),
-        # ('critical', _(app_settings.HEALTH_STATUS_LABELS['critical'])),
+        ('critical', _(app_settings.HEALTH_STATUS_LABELS['critical'])),
         ('deactivated', _(app_settings.HEALTH_STATUS_LABELS['deactivated'])),
     )
     status = StatusField(
@@ -348,7 +348,7 @@ class AbstractDeviceMonitoring(TimeStampedEditableModel):
             _('"unknown" means the device has been recently added;\n') +
             _('"ok" means the device is operating normally;\n') +
             # _('"problem" means the device is having issues but it\'s still reachable;\n') +
-            # _('"critical" means the device is not reachable or in critical conditions;\n') +
+            _('"critical" means the device being in an offline state;\n') +
             _('"deactivated" means the device is deactivated;')
         ).format(
             app_settings.HEALTH_STATUS_LABELS['unknown'],

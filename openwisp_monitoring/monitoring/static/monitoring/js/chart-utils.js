@@ -41,7 +41,9 @@ django.jQuery(
 
       // Add label to daterangepicker widget
       function addDateRangePickerLabel(startDate, endDate) {
-        $("#daterangepicker-widget span").html(startDate + " - " + endDate);
+        let start = gettext(startDate.slice(0, startDate.indexOf(' '))) + startDate.slice(startDate.indexOf(' '))
+        let end = gettext(endDate.slice(0, endDate.indexOf(' '))) + endDate.slice(endDate.indexOf(' '))
+        $("#daterangepicker-widget span").html(start + " - " + end);
       }
 
       function initDateRangePickerWidget(start, end) {
